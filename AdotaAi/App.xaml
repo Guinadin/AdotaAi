@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Jober.App"
+    >
+    
+    <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform 
+                x:TypeArguments="x:String" 
+                x:Key="SpecialFont"
+                >
+                
+                <On 
+                    Platform="Android" 
+                    Value="amazon.otf#amazon"
+                />
+                
+                <On 
+                    Platform="iOS"
+                    Value="Aberus.otf"
+                />
+                
+                <On 
+                    x:Name="btnLogar"
+                />
+                
+            </OnPlatform>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

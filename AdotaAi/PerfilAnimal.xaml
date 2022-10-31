@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Jober.PerfilEmpresa"
+    Title="Perfil Animal"
+    >
+    
+    <ContentPage.Content>
+        
+        <ScrollView>
+            
+            <RelativeLayout>
+                
+                <Image
+                    Aspect="AspectFill"  
+                    Source="fundoprincipal"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"  
+                />
+
+                <StackLayout 
+                    Orientation="Vertical" 
+                    Spacing="10" 
+                    Padding="30" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Center" 
+                    >
+
+                    <StackLayout 
+                        Orientation="Vertical"  
+                        HeightRequest="275" 
+                        Padding="10"
+                        >
+                        
+                        <ImageButton 
+                            x:Name="btnMsg" 
+                            Source="animal1" 
+                            CornerRadius="240" 
+                            BackgroundColor="Transparent" 
+                            WidthRequest="100" 
+                            HeightRequest="300" 
+                            Aspect="AspectFill" 
+                            Clicked="ImageButton_Clicked"
+                        />
+                        
+                    </StackLayout>
+
+                    <Label 
+                        Text="Amora" 
+                        Margin="10" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        TextColor="Black" 
+                        FontSize="35" 
+                        HorizontalTextAlignment="Center" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                    />
+
+                    <Label 
+                        Text="SRD MD PELO CURTO" 
+                        TextColor="Black" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        FontSize="20" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                    />
+                    
+                    <Label 
+                        Text="Cachorro" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        TextColor="Black" 
+                        FontSize="20" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                    />
+                    
+                    <Label 
+                        Text="Peso: 6kg" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        TextColor="Black" 
+                        FontSize="20" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                    />
+                    
+                    <Label 
+                        Text="Idade: 8 meses" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        TextColor="Black" 
+                        FontSize="20" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                    />
+                    
+                    <Label 
+                        Text="Amora é dócil, carinhosa e brincalhona" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        TextColor="Black" 
+                        FontSize="20" 
+                        VerticalOptions="Center" 
+                        HorizontalTextAlignment="Center" 
+                        HorizontalOptions="Center"
+                    />
+
+                    <Label 
+                        Text="Petz Jaguaré, SAO PAULO, SP" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        TextColor="Black" 
+                        FontSize="20" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                    />
+
+                    <StackLayout 
+                        Orientation="Vertical"  
+                        Spacing="80"   
+                        HeightRequest="110"  
+                        >
+                        
+                        <Button 
+                            Text="Editar Perfil" 
+                            HorizontalOptions="CenterAndExpand" 
+                            VerticalOptions="CenterAndExpand" 
+                            Clicked="Button_Clicked"
+                            FontFamily="{StaticResource SpecialFont}" 
+                            FontSize="Title" 
+                            BackgroundColor="#F8E2B3" 
+                            BorderColor="Black" 
+                            BorderWidth="2" 
+                            TextColor="Black"                             
+                        />
+
+                    </StackLayout>
+                </StackLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

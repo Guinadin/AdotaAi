@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Jober.PerfilPessoa"
+    Title="Perfil Pessoa"
+    >
+    
+    <ContentPage.Content>
+        
+        <ScrollView>
+
+            <RelativeLayout >
+
+                <Image 
+                    Aspect="AspectFill"  
+                    Source="fundoprincipal"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"
+                />
+
+                <StackLayout 
+                    Orientation="Vertical"  
+                    Padding="30" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Center" 
+                    >
+
+
+                    <StackLayout Orientation="Vertical"   HeightRequest="200" Padding="30" >
+
+                        <ImageButton x:Name="imageE" CornerRadius="280" Clicked="imageE_Clicked" Source="profile1" BackgroundColor="Transparent" WidthRequest="120" HeightRequest="260" Aspect="AspectFill"/>
+
+                    </StackLayout>
+
+                    <Label 
+                        Text="Guilherme Nadin" 
+                        Margin="30" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        TextColor="Black" 
+                        FontSize="35" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                    />
+
+                    <Label 
+                        Text="Profissão: Desenvolvedor Mobile" 
+                        TextColor="Black" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        FontSize="20" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                    />
+                    
+                    <Label 
+                        Text="E-mail: gui.nadin@hotmail.com" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        TextColor="Black" 
+                        FontSize="20" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                    />
+                    
+                    <Label 
+                        Text="Telefone: (19)98305-7141" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        TextColor="Black" 
+                        FontSize="20" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                    />
+                    
+                    <Label 
+                        Text="Endereço: Taquaral, 1201, Campinas" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        TextColor="Black" 
+                        FontSize="20" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                    />
+                    
+                    <Label 
+                        Text="Sobre mim: Trabalho e estudo a semana inteira em casa e como moro sozinho estou na procura de um animalzinho para me fazer companhia, final de semana pratico muitos hobbies e vou na minha irmã ver minha sobrinha e cachorrinhos dela" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        TextColor="Black" 
+                        FontSize="20" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                    />
+
+
+                    <StackLayout 
+                        Orientation="Vertical"  
+                        Spacing="80"   
+                        HeightRequest="100"  
+                        >
+                        
+                        <Button 
+                            Text="Editar Perfil" 
+                            x:Name="btnEd" 
+                            HorizontalOptions="CenterAndExpand" 
+                            VerticalOptions="CenterAndExpand"
+                            FontFamily="{StaticResource SpecialFont}"
+                            FontSize="Title" 
+                            Clicked="btnEd_Clicked"
+                            BackgroundColor="#F8E2B3" 
+                            BorderColor="Black" 
+                            BorderWidth="2" 
+                            TextColor="Black" 
+                        />
+
+                    </StackLayout>
+                </StackLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

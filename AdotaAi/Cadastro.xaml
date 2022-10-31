@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Jober.Cadastro"
+    >
+    
+    <RelativeLayout>
+        
+        <Image 
+            Aspect="AspectFill"  
+            Source="fundo2"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"
+        />
+
+        <StackLayout 
+            Orientation="Vertical"  
+            Spacing="5" 
+            HorizontalOptions="CenterAndExpand"  
+            Margin="35, 40, 0, 20"
+            >
+
+            <Image  
+                Source="logonova2"
+            />
+
+            <Entry 
+                x:Name="txtNome"  
+                FontFamily="{StaticResource SpecialFont}" 
+                Placeholder="Nome:" 
+                PlaceholderColor="Black" 
+                ClearButtonVisibility="WhileEditing" 
+                TextColor="Black" 
+                VerticalOptions="Center"
+            />
+
+            <Entry 
+                x:Name="txtSobreNome"  
+                FontFamily="{StaticResource SpecialFont}" 
+                Placeholder="Sobrenome:" 
+                PlaceholderColor="Black" 
+                ClearButtonVisibility="WhileEditing" 
+                TextColor="Black"
+                VerticalOptions="Center"
+            />
+
+            <Label 
+                Text="Gênero:" 
+                FontSize="18" 
+                FontFamily="{StaticResource SpecialFont}" 
+                TextColor="Black"  
+            />
+
+            <StackLayout 
+                Orientation="Horizontal" 
+                Spacing="10" 
+                HorizontalOptions="Center"
+                >
+
+                <CheckBox 
+                    x:Name="Masculino"  
+                    Color="Black" 
+                    CheckedChanged="Masculino_CheckedChanged"
+                />
+
+                <Label 
+                    Text="Masc" 
+                    VerticalTextAlignment="Center" 
+                    FontFamily="{StaticResource SpecialFont}" 
+                    FontSize="Large" 
+                    TextColor="Black"
+                />
+
+                <CheckBox 
+                    x:Name="Feminino"  
+                    Color="Black" 
+                    CheckedChanged="Feminino_CheckedChanged"/>
+
+                <Label 
+                    Text="Femin" 
+                    VerticalTextAlignment="Center"  
+                    FontFamily="{StaticResource SpecialFont}" 
+                    FontSize="Large" 
+                    TextColor="Black"
+                />
+            </StackLayout>
+
+            <Entry 
+                x:Name="txtEmail"  
+                FontFamily="{StaticResource SpecialFont}" 
+                Placeholder="E-mail:" 
+                PlaceholderColor="Black" 
+                ClearButtonVisibility="WhileEditing" 
+                TextColor="Black" 
+                VerticalOptions="Center"
+                />
+
+            <Entry 
+                x:Name="txtTelefone"   
+                Keyboard="Numeric"  
+                FontFamily="{StaticResource SpecialFont}" 
+                Placeholder="Telefone:" 
+                PlaceholderColor="Black" 
+                Text="(19)" 
+                ClearButtonVisibility="WhileEditing" 
+                TextColor="Black" 
+                VerticalOptions="Center"/>
+
+            <Label 
+                Text="IDENTIDADE:" 
+                FontSize="18" 
+                FontFamily="{StaticResource SpecialFont}" 
+                TextColor="Black"
+            />
+
+            <StackLayout 
+                Orientation="Horizontal" 
+                Spacing="16"
+                >
+
+                <CheckBox 
+                    x:Name="CPF" 
+                    CheckedChanged="CPF_CheckedChanged" 
+                    Color="Black" 
+                />
+
+                <Label 
+                    Text="CPF" 
+                    VerticalTextAlignment="Center" 
+                    FontFamily="{StaticResource SpecialFont}" 
+                    FontSize="Large" 
+                    TextColor="Black"
+                />
+
+                <CheckBox 
+                    x:Name="CNPJ"
+                    CheckedChanged="CNPJ_CheckedChanged" 
+                    Color="Black"
+                />
+
+                <Label 
+                    Text="CNPJ" 
+                    VerticalTextAlignment="Center"  
+                    FontFamily="{StaticResource SpecialFont}" 
+                    FontSize="Large" 
+                    TextColor="Black"
+                />
+            </StackLayout>
+
+            <Entry 
+                x:Name="txtCPF"  
+                FontFamily="{StaticResource SpecialFont}" 
+                Placeholder="Digite o CPF:" 
+                IsVisible="false" 
+                PlaceholderColor="Red" 
+                ClearButtonVisibility="WhileEditing" 
+                TextColor="Red" 
+                Keyboard="Numeric"  
+                VerticalOptions="Center"/>
+
+            <Entry 
+                x:Name="txtCNPJ" 
+                FontFamily="{StaticResource SpecialFont}" 
+                Placeholder="Digite o CNPJ:" 
+                IsVisible="false" 
+                PlaceholderColor="Red" 
+                ClearButtonVisibility="WhileEditing" 
+                TextColor="Red" 
+                Keyboard="Numeric"
+                VerticalOptions="Center"
+            />
+
+            <Entry 
+                x:Name="txtSenha" 
+                FontFamily="{StaticResource SpecialFont}" 
+                Placeholder="Senha:" 
+                PlaceholderColor="Red" 
+                ClearButtonVisibility="WhileEditing" 
+                TextColor="Red" 
+                IsPassword="True" 
+                VerticalOptions="Center"
+            />
+
+            <StackLayout 
+                Orientation="Horizontal" 
+                HorizontalOptions="CenterAndExpand" 
+                Margin="0, 0, 0, 20"
+                >
+
+                <Button 
+                    x:Name="btnCadastrar" 
+                    Text="Cadastrar" 
+                    Margin="5" 
+                    FontFamily="{StaticResource SpecialFont}" 
+                    FontSize="33"
+                    HorizontalOptions="Center" 
+                    Clicked="btnCadastrar_Clicked"
+                    BackgroundColor="#F8E2B3" 
+                    BorderColor="Black" 
+                    BorderWidth="2" 
+                    TextColor="Black"
+                />
+            </StackLayout>
+        </StackLayout>
+    </RelativeLayout>
+</ContentPage>

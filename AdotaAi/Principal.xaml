@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    x:Class="Jober.Detail"
+    Title="AdotaAi"
+    >
+    
+    <ContentPage.Content>
+        
+        <RelativeLayout 
+            Padding="45"
+            >
+            
+            <Image 
+                Aspect="AspectFill"  
+                Source="fundoprincipal"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"
+            />
+
+            <StackLayout 
+                Orientation="Vertical" 
+                Spacing="10" 
+                Padding="45" 
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand"
+                >
+                
+                <pancake:PancakeView 
+                     CornerRadius="40"
+                     IsClippedToBounds="true"
+                     HorizontalOptions="FillAndExpand"
+                     HeightRequest="200"
+                    >
+                    
+                    <Image 
+                        x:Name="img"  
+                        Source="animal1" 
+                        HeightRequest="120" 
+                        WidthRequest="50" 
+                        HorizontalOptions="Fill" 
+                        VerticalOptions="Fill" 
+                        Aspect="AspectFill" 
+                    />
+                </pancake:PancakeView>
+                
+                <Label 
+                    x:Name="Nome" 
+                    Text="Nome: Amora"
+                    TextColor="Black"
+                    Padding="10" 
+                    FontFamily="{StaticResource SpecialFont}" 
+                    FontSize="Title" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                />
+                
+                <Label 
+                    x:Name="Raça" 
+                    Text="Raça: SRD MD PELO CURTO" 
+                    TextColor="Black" 
+                    FontFamily="{StaticResource SpecialFont}" 
+                    FontSize="18" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                />
+                
+                <Label 
+                    x:Name="Peso" 
+                    Text="Peso: 6 kg" 
+                    FontFamily="{StaticResource SpecialFont}" 
+                    TextColor="Black" 
+                    FontSize="18" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    />
+                
+                <Label 
+                    x:Name="Idade" 
+                    Text="Idade: 1 Ano" 
+                    FontFamily="{StaticResource SpecialFont}" 
+                    TextColor="Black" 
+                    FontSize="18" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                />
+                
+                <Label
+                    x:Name="Local" 
+                    Text="Petz Jaguaré, SAO PAULO, SP" 
+                    FontFamily="{StaticResource SpecialFont}" 
+                    TextColor="Black" 
+                    FontSize="18" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                />
+                
+                <Label 
+                    x:Name="Sobre" 
+                    Text="Sobre: Amora é dócil, carinhosa e brincalhona" 
+                    FontFamily="{StaticResource SpecialFont}" 
+                    TextColor="Black" 
+                    FontSize="18" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                />
+
+                <StackLayout 
+                    Orientation="Horizontal"  
+                    Spacing="80"   
+                    HeightRequest="110" 
+                    Padding="0, 20, 0, 0"
+                    >
+                    <ImageButton 
+                        Source="botaoadota" 
+                        x:Name="btnAceitar" 
+                        Clicked="btnAceitar_Clicked" 
+                        BackgroundColor="LightGray"
+                        BorderWidth="5" 
+                        BorderColor="Black" 
+                        CornerRadius="50" 
+                        WidthRequest="108" 
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand" 
+                    />
+                    
+                    <ImageButton 
+                        Source="botaoadota2" 
+                        x:Name="btnRecusar" 
+                        Clicked="btnRecusar_Clicked"
+                        BackgroundColor="LightGray"
+                        CornerRadius="20" 
+                        BorderWidth="5" 
+                        BorderColor="Black" 
+                        WidthRequest="125" 
+                        HorizontalOptions="CenterAndExpand" 
+                        VerticalOptions="CenterAndExpand" 
+                    />
+                    
+                </StackLayout>
+            </StackLayout>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>
