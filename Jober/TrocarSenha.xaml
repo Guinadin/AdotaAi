@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Jober.TrocarSenha"
+    >
+    
+    <ContentPage.Content>
+        
+        <ScrollView>
+            
+            <RelativeLayout>
+                
+                <Image 
+                    Aspect="AspectFill"  
+                    Source="fundo2"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"
+                />
+
+                <StackLayout 
+                    Orientation="Vertical" 
+                    VerticalOptions="Center"  
+                    Spacing="60" 
+                    Padding="20" 
+                    Margin="20, 0, 20, 0" 
+                    >
+                    
+                    <Image 
+                        Source="logonova2" 
+                        Aspect="Fill"
+                    />
+
+                    <Entry 
+                        x:Name="txtEmailTrocaSenha" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        Placeholder="Informe seu E-mail:" 
+                        PlaceholderColor="Black" 
+                        TextColor="Black" 
+                        VerticalOptions="Center"
+                    />
+                    
+                    <Button 
+                        x:Name="btnTrocaSenha" 
+                        Clicked="btnTrocaSenha_Clicked"  
+                        Text="Enviar" 
+                        FontFamily="{StaticResource SpecialFont}" 
+                        FontSize="20" 
+                        BackgroundColor="#F8E2B3" 
+                        BorderColor="Black" 
+                        BorderWidth="2" 
+                        TextColor="Black" 
+                    />
+                    
+                </StackLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
